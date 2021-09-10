@@ -1,0 +1,730 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('/Fonts/Lato-Black.woff2') format('woff2'),
+    url('/Fonts/Lato-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/Fonts/Lato-Bold.woff2') format('woff2'),
+    url('/Fonts/Lato-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/Fonts/Lato-BlackItalic.woff2') format('woff2'),
+    url('/Fonts/Lato-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/Fonts/Lato-BoldItalic.woff2') format('woff2'),
+    url('/Fonts/Lato-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/Fonts/Lato-Italic.woff2') format('woff2'),
+    url('/Fonts/Lato-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/Fonts/Lato-Light.woff2') format('woff2'),
+    url('/Fonts/Lato-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/Fonts/Lato-LightItalic.woff2') format('woff2'),
+    url('/Fonts/Lato-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato Hairline';
+  src: url('/Fonts/Lato-Hairline.woff2') format('woff2'),
+    url('/Fonts/Lato-Hairline.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/Fonts/Lato-Regular.woff2') format('woff2'),
+    url('/Fonts/Lato-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato Hairline';
+  src: url('/Fonts/Lato-HairlineItalic.woff2') format('woff2'),
+    url('/Fonts/Lato-HairlineItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/*---------------------------- Stylesheet Start ---------------- ------------*/
+
+/*------------ Global Styles  ------------*/
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: 'Lato';
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+p {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+b {
+  color: black;
+  font-weight: bolder;
+}
+
+strong {
+  color: black;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0px auto;
+}
+
+a {
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 450;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+h2 {
+  font-size: 40px;
+  max-width: 300px;
+  margin: 0 auto;
+  color: white;
+  font-weight: lighter;
+  padding-top: 80px;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+h4 {
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*------------ Header Styles Start ------------*/
+header {
+  background-color: #e3ebe3;
+  padding-top: 10px;
+  opacity: 0.82;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .logo-wrap img {
+  margin-left: -170px;
+  margin-top: -30px;
+} */
+
+.header-wrap nav {
+  margin-left: 50px;
+}
+
+.header-wrap ul {
+  display: flex;
+}
+
+.bullet-list li a {
+  color: #2d425a;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: unset;
+  margin: 0px;
+}
+/*------------ Header Styles Over ------------*/
+
+/*------------ Hero Styles Start ------------*/
+.hero {
+  background-image: url('../images/bg.png');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -160px;
+}
+
+.hero h1 {
+  padding-left: 140px;
+  padding-top: 180px;
+  max-width: 650px;
+}
+
+.hero h1 strong {
+  text-transform: uppercase;
+}
+
+.hero p {
+  color: white;
+  font-size: 17px;
+  max-width: 730px;
+  padding-left: 140px;
+  padding-top: 30px;
+  margin: 0px;
+  text-align: justify;
+}
+
+.hero a {
+  background-color: #00aeef;
+  border-radius: 3px;
+  color: white;
+  margin-left: 140px;
+  margin-top: 34px;
+}
+
+/*------------ Header Styles Over ------------*/
+
+/*------------ About Styles Start ------------*/
+.about {
+  color: white;
+}
+
+.about h2 {
+  color: #00aeef;
+  /*   font-weight: unset; */
+  margin-top: -130px;
+  padding-top: -50px;
+}
+
+.about p {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.ac-wrapper {
+  display: flex;
+  padding-top: 70px;
+}
+
+.ac-wrapper img {
+  position: relative;
+  left: -200px;
+}
+
+.ac-wrapper strong {
+  font-weight: bold;
+}
+
+.about a {
+  color: #00aeef;
+  border: 1px rgb(255 255 255) groove;
+  margin-left: 603px;
+  margin-top: 45px;
+  margin-bottom: 100px;
+}
+
+.para-about {
+  justify-content: space-between;
+}
+
+.para-about p {
+  display: block;
+  text-align: justify;
+}
+
+.para-about p:first-child {
+  padding-top: 0px;
+}
+
+/*------------ About Styles End ------------*/
+
+/*------------ Services Styles Start ------------*/
+
+.services {
+  background-image: url('../images/services.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110vh;
+  background-position: 0px -180px;
+}
+
+.services-list {
+  display: flex;
+  flex-flow: wrap;
+  margin-top: 100px;
+}
+
+.services-item {
+  flex: 50%;
+  display: flex;
+  max-width: 680px;
+  padding: 30px;
+}
+
+.services-text {
+  padding-left: 30px;
+}
+
+.services-item p {
+  color: white;
+  font-size: 14px;
+  text-align: justify;
+  padding-top: 10px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+.services-item img {
+  max-width: 90px;
+  max-height: 90px;
+}
+
+.services-item h4 {
+  margin: 0;
+}
+
+/*------------ Services Styles End ------------*/
+
+/*------------ Fault Styles Start ------------*/
+
+.fault {
+  background-color: #00aeef;
+  padding: 50px;
+}
+
+.fault .container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fault h3 {
+  font-size: 26px;
+}
+
+.fault p {
+  font-size: 15px;
+  color: white;
+  padding-top: 10px;
+  margin-bottom: 25px;
+}
+
+.fault a {
+  color: white;
+  background-color: #2d4259;
+  margin: 0 auto;
+  font-weight: lighter;
+}
+
+/*------------ Fault Styles End ------------*/
+
+/*------------ Products Styles Start ------------*/
+.products {
+  background-color: white;
+}
+
+.products-head h2 {
+  color: #00aeef;
+}
+
+.products-head p {
+  padding-top: 30px;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.products-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.products-text {
+  padding-left: 50px;
+}
+.text-items {
+  background-color: #f8f8f8;
+  margin-top: 20px;
+}
+
+.text-items h4 {
+  color: black;
+  font-size: 20px;
+}
+
+.text-items p {
+  font-size: 15px;
+  font-weight: lighter;
+  padding: unset;
+}
+
+.products-image {
+  margin: 53px auto;
+  max-width: 600px;
+}
+
+.products-image img {
+  padding-left: 20px;
+}
+
+/*------------ Products Styles End ------------*/
+
+/*------------ Clients Styles Start ------------*/
+.clients hr {
+  border-bottom: 3px grey;
+  border-width: medium;
+  opacity: 0.1;
+  margin: 40px -190px;
+}
+
+.clients h3 {
+  color: black;
+}
+
+.clients img {
+  padding: 30px 0px;
+}
+
+/*------------ Products Styles End ------------*/
+
+/*------------ Process Styles Start ------------*/
+.processes {
+  background-color: #d1dade;
+}
+
+.processes h2 {
+  color: black;
+  margin-left: -34px;
+  max-width: 340px;
+}
+
+.processes-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -50px;
+  padding-bottom: 100px;
+}
+
+.processes-list {
+  max-width: 500px;
+}
+
+.processes-list ol li:first-child {
+  margin-top: 80px;
+}
+
+.processes-list li {
+  padding-bottom: 20px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.processes-wrapper img {
+  margin-right: -190px;
+}
+
+/*------------ Products Styles End ------------*/
+
+/*------------ Contact Styles Start ------------*/
+.contact {
+  background-image: url('../images/opaque-building.png');
+  /* background-position: 0px 100%; */
+  background-repeat: no-repeat;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  flex-wrap: wrap;
+  padding: 100px 0px;
+}
+
+/*------------ Left-Side Contact Styles Start ------------*/
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-text p,
+.contact-text a,
+phone,
+email {
+  color: white;
+}
+
+.contact-text h3 {
+  font-size: 35px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.contact-text b {
+  font-size: 50px;
+  font-weight: 400;
+  display: block;
+  color: white;
+}
+
+.contact-text h4 {
+  font-size: 22px;
+  max-width: 400px;
+  margin-top: 50px;
+}
+
+.lower-text {
+  margin-top: 50px;
+}
+
+.lower-text p {
+  font-size: 16px;
+  font-weight: 390;
+  max-width: 400px;
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+.lower-text h4 {
+  margin: unset;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.lower-text a {
+  padding: unset;
+  margin-bottom: 20px;
+}
+
+/*------------ Left-Contact Styles End ------------*/
+
+/*------------ Right-Contact Styles Start ------------*/
+
+.contact-right {
+  margin-top: 25px;
+}
+
+.contact-right h3 {
+  color: #00aeef;
+  max-width: 100%;
+}
+
+.contact-right p {
+  margin-top: 25px;
+  margin-bottom: 40px;
+  color: #2d425a;
+  font-size: 16px;
+}
+
+.contact-right .form-group input {
+  width: 100%;
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #eeeeee;
+  color: #a5a4a4;
+}
+
+.form-group input::placeholder {
+  color: #a5a4a4;
+  font-weight: lighter;
+}
+
+.contact-right .form-group textarea {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  color: #a5a4a4;
+  border: 1px solid #eeeeee;
+  font-size: 16px;
+}
+
+.contact-right .form-group select {
+  width: 100%;
+  padding: 7px 15px;
+  margin-bottom: 20px;
+  color: #a5a4a4;
+  border: 1px solid #eeeeee;
+  max-width: 85%;
+}
+
+.button-flex {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button-flex .button-cancel {
+  background-color: #2d425a;
+  padding: 8px 40px;
+  text-align: center;
+  color: white;
+  margin-right: 10px;
+}
+
+.button-flex .button-submit {
+  background-color: #2d425a;
+  padding: 8px 40px;
+  text-align: center;
+  color: white;
+}
+
+/*------------ Right-Contact Styles End ------------*/
+
+/*------------ Contact Styles End ------------*/
+
+/*------------ Footer Styles Start ------------*/
+footer {
+  background-color: #2d425a;
+  padding: 50px 0px 80px 0px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.footer-wrapper a {
+  padding-left: unset;
+  color: white;
+}
+
+.footer-wrapper p {
+  color: white;
+}
+.footer-wrapper h4 {
+  font-size: 25px;
+  padding-bottom: 20px;
+  font-weight: 500;
+}
+
+.foot-about {
+  max-width: 30%;
+}
+
+.foot-about p {
+  text-align: justify;
+  font-size: 14px;
+}
+
+.foot-contact {
+  max-width: 30%;
+  text-align: right;
+}
+
+.foot-nav {
+  text-align: left;
+}
+
+.foot-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: right;
+}
+
+.foot-contact p,
+.foot-contact a {
+  font-size: 14px;
+}
+
+.foot-contact p:nth-child(2) {
+  max-width: 320px;
+}
+
+.foot-contact p:nth-child(3) {
+  margin-top: 25px;
+}
+
+.foot-contact p a {
+  margin-right: 0px;
+  margin-top: 0px;
+  padding: unset;
+}
+
+.foot-contact p:nth-child(6) {
+  margin-top: 25px;
+}
+
+/*------------ Footer Styles End ------------*/
+
+/*------------ Post-Footer Styles Start ------------*/
+.last-footer {
+  background-color: #1b2736;
+  padding: 25px 0;
+}
+.last-footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  color: white;
+  font-size: 14px;
+}
+
+.last-footer-flex .social-links img {
+  cursor: pointer;
+}
+
+/*------------ Post-Footer Styles End ------------*/

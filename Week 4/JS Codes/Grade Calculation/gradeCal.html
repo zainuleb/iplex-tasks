@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Grade Calculate</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="grade-heading">
+        <h1>Marks to GPA Calculator</h1>
+      </div>
+    </header>
+
+    <div class="login-box">
+      <!-- Form Start -->
+      <form>
+        <!-- Disabled Box -->
+        <div class="user-box">
+          <label>Total Marks</label><br /><br />
+          <input type="number" name="TotalMarks" placeholder="1100" disabled />
+        </div>
+        <!-- Input Obtained Marks -->
+        <div class="user-box">
+          <label>Obtained Marks</label><br /><br />
+          <input id="obtMarks" type="number" name="ObtainedMarks" />
+        </div>
+
+        <!-- Submit Grade -->
+        <button onclick="return calculateGrade()">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Calculate
+        </button>
+      </form>
+
+      <!-- Output Grade on Page -->
+      <div class="gradeOutput">
+        <span>Grade: </span>
+        <span id="grade"> </span>
+      </div>
+    </div>
+
+    <!-- Import grade.js file -->
+    <script type="text/javascript" src="js/grade.js"></script>
+  </body>
+</html>

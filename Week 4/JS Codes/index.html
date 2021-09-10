@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Records</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <h1 class="heading">Volatile Record Holder</h1>
+    </div>
+    <div class="section">
+      <div class="card-3d-wrap mx-auto">
+        <div class="card-3d-wrapper">
+          <div class="card-front">
+            <div class="center-wrap">
+              <div class="section text-center">
+                <!-- Form Start -->
+                <div class="form">
+                  <form
+                    onsubmit="event.preventDefault();onFormSubmit();"
+                    autocomplete="off"
+                  >
+                    <div class="form-group">
+                      <label for="name">Name</label>
+                      <input
+                        type="text"
+                        id="name"
+                        placeholder="Your name.."
+                        class="form-style"
+                      />
+                      <div class="err">
+                        <span id="errName"></span>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input
+                        type="text"
+                        id="email"
+                        placeholder="Email.."
+                        class="form-style"
+                      />
+                      <div class="err">
+                        <span id="errEmail"></span>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="pass">Password</label>
+                      <input
+                        type="password"
+                        id="pass"
+                        placeholder="Password.."
+                        class="form-style"
+                      />
+                      <div class="err">
+                        <span id="errPass"></span>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="phNum">Phone Number</label>
+                      <input
+                        type="text"
+                        id="phNum"
+                        placeholder="Phone Num.."
+                        class="form-style"
+                      />
+                      <div class="err">
+                        <span id="errPhNum"></span>
+                      </div>
+                    </div>
+
+                    <div class="btn">
+                      <a type="submit" value="Submit">Submit</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div id="table-area">
+      <table class="list" id="userList">
+        <thead>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Phone Number</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,525 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url('fonts/fonts/Quicksand-SemiBold.woff2') format('woff2'),
+    url('fonts/Quicksand-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('fonts/Quicksand-Regular.woff2') format('woff2'),
+    url('fonts/Quicksand-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('fonts/Quicksand-Medium.woff2') format('woff2'),
+    url('fonts/Quicksand-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('fonts/Quicksand-Bold.woff2') format('woff2'),
+    url('fonts/Quicksand-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('fonts/Quicksand-Light.woff2') format('woff2'),
+    url('fonts/Quicksand-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ----------- Global CSS Styles Start----------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Quicksand';
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2 {
+  color: white;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+nav {
+  align-items: center;
+}
+/* ----------- Global CSS Styles End ----------- */
+
+/* ----------- Header CSS Styles Start----------- */
+.upper-header {
+  background-color: #e6e7e8;
+  padding: 5px;
+}
+
+.upper-header nav {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.upper-header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.upper-header li {
+  font: 15px medium;
+}
+
+.upper-header li:first-child {
+  color: #005924;
+  font-weight: bold;
+}
+
+.upper-header li:last-child {
+  margin-left: -10px;
+}
+
+.lowerheader-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*   margin-top: -15px; */
+}
+
+.header-internetbanking {
+  background-color: #d29d54;
+  max-width: 220px;
+  color: white;
+  align-items: center;
+  padding: 23px 20px;
+  margin-left: -150px;
+}
+.header-internetbanking img {
+  padding-left: 10px;
+}
+
+.lower-header nav {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.lower-header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lower-header ul li:not(:first-child) {
+  padding-left: 60px;
+}
+
+.lower-header li a {
+  font-size: 16px;
+}
+
+.logo-wrapper img {
+  margin-top: -34px;
+}
+
+/* ----------- Hero CSS Styles Start----------- */
+
+.hero {
+  background-image: url('../images/hero.png');
+  background: linear-gradient url('../images/hero-overlay.png');
+  background-repeat: no-repeat;
+  background-size: 1500px 760px;
+  /* height: 100vh; */
+}
+
+.hero-text {
+  padding-top: 100px;
+  padding-bottom: 220px;
+}
+
+.hero-text li {
+  margin-top: 50px;
+}
+
+.hero-text li:first-child {
+  font-size: 14px;
+}
+
+.hero-text li:nth-child(2) {
+  max-width: 580px;
+  font-size: 30px;
+  line-height: 40px;
+  font-stretch: expanded;
+}
+
+.hero-text li:nth-child(3) {
+  max-width: 450px;
+  font-size: 15px;
+}
+
+.hero-text h2 b {
+  font-size: 50px;
+  color: #d29d54;
+  font-weight: 400;
+}
+
+.hero-text li:nth-child(4) a {
+  text-align: center;
+  max-width: 220px;
+  font-weight: 500;
+  color: black;
+  background-color: #f9c76e;
+  padding: 8px 14px;
+}
+
+/* ----------- Account Types CSS Styles Start----------- */
+
+.accounts {
+  background-image: url('../images/account-bg.png');
+  background-repeat: no-repeat;
+  background-size: 1500px 380px;
+  height: 50vh;
+}
+
+.accounts-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.account {
+  flex: 30%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.account-text {
+  color: white;
+  margin-left: 30px;
+  max-width: 250px;
+}
+
+.account-text h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.account-text p {
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+/* ----------- Blog CSS Styles Start----------- */
+
+.blogs-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.blog {
+  background-color: #f2f4f5;
+  max-width: 326px;
+}
+
+.blog ul {
+  padding: unset;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog li {
+  margin: 0 auto;
+}
+
+.blog li a {
+  justify-content: flex-end;
+  background-color: #005924;
+  padding: 6px 32px;
+}
+
+.blog li:not(:first-child) {
+  padding-top: 30px;
+}
+.blog li:nth-child(2) {
+  max-width: 200px;
+  text-align: center;
+}
+
+.blog li:nth-child(3) {
+  font-size: 15px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.blog li:nth-child(4) {
+  color: white;
+  max-width: 200px;
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+
+/* ----------- Banking Section CSS Styles Start----------- */
+.banking {
+  margin-top: 100px;
+}
+
+.banking-intro {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banking-intro h3 {
+  font-size: 24px;
+  color: #005924;
+  margin-bottom: 5px;
+}
+
+.banking-intro p {
+  font-size: 16px;
+  color: black;
+}
+
+/* ----------- Banking Medium CSS Styles Start----------- */
+
+.medium-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.medium {
+  display: flex;
+  flex-direction: column;
+  max-width: 120px;
+  max-height: 110px;
+  width: 120px;
+  height: 110px;
+  background-color: #f1f3f5;
+  border-radius: 15px;
+  border: 1px solid #e8e9ea;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.medium img {
+  padding-top: 20px;
+  max-width: 80px;
+  max-height: 80px;
+  margin: 0 auto;
+}
+
+.medium span {
+  font-weight: 600;
+  padding-top: 5px;
+  margin: 0 auto;
+  font-size: 14px;
+  /*   text-align: end; */
+}
+
+/* ----------- Extra Featues CSS Styles Start----------- */
+
+.extra {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.extra-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mobile {
+  background-image: url('../images/mobile.png');
+  max-height: 320px;
+  max-width: 480px;
+  width: 480px;
+  height: 320px;
+  background-repeat: no-repeat;
+}
+
+.mobile-text p:first-child {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.mobile-text p:nth-child(2) {
+  font-size: 14px;
+}
+
+.mobile-text p:nth-child(3) {
+  margin-top: 30px;
+  font-size: 12.5px;
+  color: black;
+}
+
+.debit {
+  background-image: url('../images/debit.png');
+  max-height: 320px;
+  max-width: 480px;
+  width: 480px;
+  height: 320px;
+  background-repeat: no-repeat;
+}
+
+.mobile-text {
+  margin-left: 30px;
+}
+
+.mobile-text,
+.debit-text {
+  margin-top: 80px;
+  color: #005924;
+  max-width: 230px;
+}
+
+.debit-text li:first-child {
+  font-size: 25px;
+  font-weight: 500;
+  max-width: 200px;
+}
+
+.debit-text li:nth-child(2) {
+  font-size: 15px;
+  font-weight: 500;
+  max-width: 200px;
+  margin-top: 30px;
+}
+
+.debit-text li:last-child {
+  margin-top: 40px;
+  background-color: #005924;
+  padding: 10px 12px;
+  max-width: 130px;
+}
+
+.debit-text a {
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+/* ----------- About CSS Styles Start----------- */
+
+.about {
+  background-image: url('../images/building.png');
+  background-size: 1500px 450px;
+  background-repeat: no-repeat;
+  max-height: 450px;
+  max-width: 1480px;
+  width: 1500px;
+  height: 450px;
+}
+
+.about-text {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.about-text li {
+  text-align: center;
+  color: white;
+}
+
+.about-text li:not(:first-child) {
+  padding-top: 30px;
+}
+
+.about-text li:first-child {
+  font-size: 21px;
+  color: #f9c76e;
+  font-weight: 500;
+}
+
+.about-text li:nth-child(2) {
+  font-size: 24px;
+}
+
+.about-text li:nth-child(3) {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.about-text li:last-child {
+  background-color: #62956d;
+  padding: 15px 20px;
+  max-width: 130px;
+  margin: 0 auto;
+}
+/* ----------- Footer CSS Styles Start----------- */
+
+.footer {
+  margin-top: 80px;
+}
+
+.upper-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.upper-footer h3 {
+  margin-bottom: 20px;
+}
+
+.office-text {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.office-text p:first-child {
+  max-width: 340px;
+}
+
+.office-text p:nth-child(2) {
+  margin-top: 20px;
+}
+
+.extra-info ul {
+  padding: unset;
+}
+
+.extra-info li {
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+ul:not(:first-child) {
+  padding-top: 10px;
+}
