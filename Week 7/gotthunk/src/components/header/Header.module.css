@@ -1,0 +1,26 @@
+.header {
+  background-color: #b4b3b3;
+  padding: 0.1px 0px;
+}
+
+.header:hover {
+  background-color: #a8a7a7;
+}
+
+.navList {
+  max-width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navList li {
+  margin: 1px 25px;
+}
+
+.navList h2 {
+  font-style: oblique;
+  color: #073a3a;
+  font-size: 40px;
+  padding: 5px 10px;
+  margin: 5px 10px;
+}

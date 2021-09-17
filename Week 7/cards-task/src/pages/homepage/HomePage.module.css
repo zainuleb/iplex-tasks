@@ -1,0 +1,17 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 500px;
+  font-family: 'Bigelow Rules';
+}
+
+.cardContainer h1 {
+  font-size: 60px;
+}
+
+.cardContainer h2 {
+  font-size: 40px;
+  color: black !important;
+}

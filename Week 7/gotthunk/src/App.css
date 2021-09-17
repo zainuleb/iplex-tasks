@@ -1,0 +1,14 @@
+.App {
+  box-sizing: none;
+  font-family: 'Bigelow Rules';
+  color: #1e2020;
+}
+
+a {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+ul {
+  list-style-type: none !important;
+}
