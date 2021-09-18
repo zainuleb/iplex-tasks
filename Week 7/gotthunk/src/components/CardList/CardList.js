@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './CardList.module.css';
 
-import Card from '../Card/Card';
+import Card from '../card/Card.js';
 
 const CardList = ({ characters }) => {
   return (

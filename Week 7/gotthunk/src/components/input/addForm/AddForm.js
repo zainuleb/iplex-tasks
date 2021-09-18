@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
-import Axios from 'axios';
+import { useDispatch } from 'react-redux';
+import { addChars } from '../../../redux/actions/charActions';
 import { useHistory } from 'react-router';
 
 import styles from './AddForm.module.css';
 
 const Input = () => {
+  let dispatch = useDispatch();
   let history = useHistory();
+
   const [formChar, setFormChar] = useState({
     imageUrl: 'https://thronesapi.com/assets/images/ned-stark.jpg',
   });
@@ -19,8 +22,10 @@ const Input = () => {
     });
   };
 
+  console.log(formChar);
   const submitHandler = async (e) => {
-    await Axios.post('http://localhost:5000/characters', formChar);
+    dispatch(addChars(formChar));
+    /* await Axios.post('http://localhost:5000/characters', formChar); */
     history.push('/');
   };
 

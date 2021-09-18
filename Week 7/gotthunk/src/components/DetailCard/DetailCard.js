@@ -1,11 +1,17 @@
 import React from 'react';
-import axios from 'axios';
+import { useDispatch } from 'react-redux';
+import { deleteChars } from '../../redux/actions/charActions';
+
 import { Link } from 'react-router-dom';
 import styles from './DetailCard.module.css';
 
 const DetailCard = ({ character, styleClass }) => {
+  //DeleteReduxArea
+  let dispatch = useDispatch();
   const deleteChar = async (id) => {
-    await axios.delete(`http://localhost:5000/characters/${id}`);
+    if (window.confirm('Are You Sure?')) {
+      dispatch(deleteChars(id));
+    }
   };
 
   return (

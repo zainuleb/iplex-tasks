@@ -1,26 +1,34 @@
-import React, { useState, useEffect } from 'react';
-import Axios from 'axios';
+import React, { useEffect } from 'react';
+/* import Axios from 'axios'; */
+
+import { useDispatch, useSelector } from 'react-redux';
+import { loadChars } from '../../redux/actions/charActions';
+
 import styles from './Homepage.module.css';
 
-import CardList from '../../components/CardList/CardList';
+import CardList from '../../components/cardList/CardList';
 
 const Homepage = () => {
-  const [characters, setCharacters] = useState([]);
+  //ReduxArea
+  let dispatch = useDispatch();
+
+  const { characters } = useSelector((state) => state.data);
 
   useEffect(() => {
     try {
-      getData();
+      dispatch(loadChars());
     } catch (err) {
       console.log(err);
     }
+    // eslint-disable-next-line
   }, []);
 
-  const getData = async () => {
+  //Without Redux
+  /*   const [characters, setCharacters] = useState([]); */
+  /*   const getData = async () => {
     const data = await Axios.get('http://localhost:5000/characters');
     setCharacters(data.data.reverse());
-  };
-
-  console.log(characters);
+  }; */
 
   return (
     <div className={styles.homepage}>

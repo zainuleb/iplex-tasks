@@ -20,7 +20,8 @@ const Details = () => {
     } catch (err) {
       console.log(err);
     }
-  });
+    // eslint-disable-next-line
+  }, []);
 
   return <DetailCard character={character} styleClass="one" />;
 };

@@ -1,24 +1,35 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import { useDispatch, useSelector } from 'react-redux';
+import {
+  loadSingleChar,
+  updateChars,
+} from '../../../redux/actions/charActions';
 import { useHistory, useParams } from 'react-router';
 
 import styles from './EditForm.module.css';
 
 const EditForm = () => {
   let history = useHistory();
+  const dispatch = useDispatch();
+  const { character } = useSelector((state) => state.data);
   const { id } = useParams();
-
-  const loadChar = async () => {
-    const char = await axios.get(`http://localhost:5000/characters/${id}`);
-    setFormChar(char.data);
-  };
 
   const [formChar, setFormChar] = useState({});
 
-  // eslint-disable-next-line
   useEffect(() => {
     try {
-      loadChar();
+      dispatch(loadSingleChar(id));
+    } catch (err) {
+      console.log(err);
+    }
+    // eslint-disable-next-line
+  }, []);
+
+  useEffect(() => {
+    try {
+      if (character) {
+        setFormChar(character);
+      }
     } catch (err) {
       console.log(err);
     }
@@ -35,7 +46,8 @@ const EditForm = () => {
   };
 
   const submitHandler = async (e) => {
-    await axios.put(`http://localhost:5000/characters/${id}`, formChar);
+    console.log(formChar);
+    dispatch(updateChars(formChar, formChar.id));
     history.push('/');
   };
 

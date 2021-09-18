@@ -1,6 +1,16 @@
 {
   "characters": [
     {
+      "id": 0,
+      "firstName": "Daenerys",
+      "lastName": "Targaryen",
+      "fullName": "Daenerys Targaryen",
+      "title": "Mother of Dragons",
+      "family": "House Targaryen",
+      "image": "daenerys.jpg",
+      "imageUrl": "https://thronesapi.com/assets/images/daenerys.jpg"
+    },
+    {
       "id": 1,
       "firstName": "Samwell",
       "lastName": "Tarly",
@@ -59,6 +69,46 @@
       "family": "House Stark",
       "image": "ned-stark.jpg",
       "imageUrl": "https://thronesapi.com/assets/images/ned-stark.jpg"
+    },
+    {
+      "id": 7,
+      "firstName": "Robert",
+      "lastName": "Baratheon",
+      "fullName": "Robert Baratheon",
+      "title": "Lord of the Seven Kingdoms",
+      "family": "House Baratheon",
+      "image": "robert-baratheon.jpeg",
+      "imageUrl": "https://thronesapi.com/assets/images/robert-baratheon.jpeg"
+    },
+    {
+      "id": 8,
+      "firstName": "Jamie",
+      "lastName": "Lannister",
+      "fullName": "Jamie Lannister",
+      "title": "Lord Commander of the Kingsguard",
+      "family": "House Lannister",
+      "image": "jaime-lannister.jpg",
+      "imageUrl": "https://thronesapi.com/assets/images/jaime-lannister.jpg"
+    },
+    {
+      "id": 9,
+      "firstName": "Cersei",
+      "lastName": "Lannister",
+      "fullName": "Cersei Lannister",
+      "title": "Lady of Casterly Rock",
+      "family": "House Lannister",
+      "image": "cersei.jpg",
+      "imageUrl": "https://thronesapi.com/assets/images/cersei.jpg"
+    },
+    {
+      "id": 10,
+      "firstName": "Cateyln",
+      "lastName": "Stark",
+      "fullName": "Catelyn Stark",
+      "title": "Lady of Winterfell",
+      "family": "House Stark",
+      "image": "catelyn-stark.jpg",
+      "imageUrl": "https://thronesapi.com/assets/images/catelyn-stark.jpg"
     }
   ]
 }
