@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Axios from 'axios';
 import styles from './Homepage.module.css';
 
 import CardList from '../../components/CardList/CardList';
@@ -8,19 +9,18 @@ const Homepage = () => {
 
   useEffect(() => {
     try {
-      let jsonData = require('../../data/gotData.json');
-      setCharacters(jsonData);
+      getData();
     } catch (err) {
       console.log(err);
     }
-  });
+  }, []);
 
-  //For API
-  /*   useEffect(() => {
-    fetch('https://thronesapi.com/api/v2/Characters')
-      .then((res) => res.json())
-      .then((res) => setCharacters(res));
-  }, []); */
+  const getData = async () => {
+    const data = await Axios.get('http://localhost:5000/characters');
+    setCharacters(data.data.reverse());
+  };
+
+  console.log(characters);
 
   return (
     <div className={styles.homepage}>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import DetailCard from '../../components/DetailCard/DetailCard';
 
-import styles from './Details.module.css';
 import { useParams } from 'react-router-dom';
 
 const Details = () => {
@@ -9,11 +9,14 @@ const Details = () => {
 
   const [character, setCharacter] = useState({});
 
+  const loadChar = async () => {
+    const char = await axios.get(`http://localhost:5000/characters/${id}`);
+    setCharacter(char.data);
+  };
+
   useEffect(() => {
     try {
-      fetch(`https://thronesapi.com/api/v2/Characters/${id}`)
-        .then((res) => res.json())
-        .then((res) => setCharacter(res));
+      loadChar();
     } catch (err) {
       console.log(err);
     }
