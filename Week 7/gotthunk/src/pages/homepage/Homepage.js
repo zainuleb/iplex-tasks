@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-/* import Axios from 'axios'; */
 
 import { useDispatch, useSelector } from 'react-redux';
 import { loadChars } from '../../redux/actions/charActions';
@@ -22,13 +21,6 @@ const Homepage = () => {
     }
     // eslint-disable-next-line
   }, []);
-
-  //Without Redux
-  /*   const [characters, setCharacters] = useState([]); */
-  /*   const getData = async () => {
-    const data = await Axios.get('http://localhost:5000/characters');
-    setCharacters(data.data.reverse());
-  }; */
 
   return (
     <div className={styles.homepage}>

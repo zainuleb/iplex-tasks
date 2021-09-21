@@ -32,12 +32,12 @@
     },
     {
       "id": 3,
-      "firstName": "Arya",
+      "firstName": "Arya2",
       "lastName": "Stark",
       "fullName": "Arya Stark",
       "title": "No One",
       "family": "House Stark",
-      "image": "arya-stark.jpg",
+      "image": "No One.jpg",
       "imageUrl": "https://thronesapi.com/assets/images/arya-stark.jpg"
     },
     {

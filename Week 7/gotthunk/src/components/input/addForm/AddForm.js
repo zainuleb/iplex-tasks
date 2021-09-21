@@ -22,14 +22,10 @@ const Input = () => {
     });
   };
 
-  console.log(formChar);
   const submitHandler = async (e) => {
     dispatch(addChars(formChar));
-    /* await Axios.post('http://localhost:5000/characters', formChar); */
     history.push('/');
   };
-
-  /*   console.log(formChar); */
 
   return (
     <>

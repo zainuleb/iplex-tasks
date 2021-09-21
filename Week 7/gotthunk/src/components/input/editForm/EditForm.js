@@ -34,7 +34,7 @@ const EditForm = () => {
       console.log(err);
     }
     // eslint-disable-next-line
-  }, []);
+  }, [character]);
 
   const changeHandler = (e) => {
     setFormChar({
@@ -48,6 +48,7 @@ const EditForm = () => {
   const submitHandler = async (e) => {
     console.log(formChar);
     dispatch(updateChars(formChar, formChar.id));
+    setFormChar({});
     history.push('/');
   };
 
