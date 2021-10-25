@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/'https://zainuleb.github.io/time-management-system-react-js/static/css/main.ac08cf2a.chunk.css",
-    "main.js": "/'https://zainuleb.github.io/time-management-system-react-js/static/js/main.65585a4b.chunk.js",
-    "main.js.map": "/'https://zainuleb.github.io/time-management-system-react-js/static/js/main.65585a4b.chunk.js.map",
-    "runtime-main.js": "/'https://zainuleb.github.io/time-management-system-react-js/static/js/runtime-main.7574181c.js",
-    "runtime-main.js.map": "/'https://zainuleb.github.io/time-management-system-react-js/static/js/runtime-main.7574181c.js.map",
-    "static/css/2.0a9ec390.chunk.css": "/'https://zainuleb.github.io/time-management-system-react-js/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.f07e1aae.chunk.js": "/'https://zainuleb.github.io/time-management-system-react-js/static/js/2.f07e1aae.chunk.js",
-    "static/js/2.f07e1aae.chunk.js.map": "/'https://zainuleb.github.io/time-management-system-react-js/static/js/2.f07e1aae.chunk.js.map",
-    "index.html": "/'https://zainuleb.github.io/time-management-system-react-js/index.html",
-    "static/css/2.0a9ec390.chunk.css.map": "/'https://zainuleb.github.io/time-management-system-react-js/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.ac08cf2a.chunk.css.map": "/'https://zainuleb.github.io/time-management-system-react-js/static/css/main.ac08cf2a.chunk.css.map",
-    "static/js/2.f07e1aae.chunk.js.LICENSE.txt": "/'https://zainuleb.github.io/time-management-system-react-js/static/js/2.f07e1aae.chunk.js.LICENSE.txt"
+    "main.css": "/portfolio-iplex-reactjs/static/css/main.bc29291b.chunk.css",
+    "main.js": "/portfolio-iplex-reactjs/static/js/main.de307273.chunk.js",
+    "main.js.map": "/portfolio-iplex-reactjs/static/js/main.de307273.chunk.js.map",
+    "runtime-main.js": "/portfolio-iplex-reactjs/static/js/runtime-main.3d4c5369.js",
+    "runtime-main.js.map": "/portfolio-iplex-reactjs/static/js/runtime-main.3d4c5369.js.map",
+    "static/js/2.d5d12a7c.chunk.js": "/portfolio-iplex-reactjs/static/js/2.d5d12a7c.chunk.js",
+    "static/js/2.d5d12a7c.chunk.js.map": "/portfolio-iplex-reactjs/static/js/2.d5d12a7c.chunk.js.map",
+    "index.html": "/portfolio-iplex-reactjs/index.html",
+    "static/css/main.bc29291b.chunk.css.map": "/portfolio-iplex-reactjs/static/css/main.bc29291b.chunk.css.map",
+    "static/js/2.d5d12a7c.chunk.js.LICENSE.txt": "/portfolio-iplex-reactjs/static/js/2.d5d12a7c.chunk.js.LICENSE.txt",
+    "static/media/Home.module.css": "/portfolio-iplex-reactjs/static/media/Ellipse 1@2x.e3d0efe5.png",
+    "static/media/index.css": "/portfolio-iplex-reactjs/static/media/Raleway-ThinItalic.714920a2.woff",
+    "static/media/Testemonials.module.css": "/portfolio-iplex-reactjs/static/media/map-55e32ae4c19a85738ebb72d3172e3ab7@2x.5d62f3cc.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7574181c.js",
-    "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.f07e1aae.chunk.js",
-    "static/css/main.ac08cf2a.chunk.css",
-    "static/js/main.65585a4b.chunk.js"
+    "static/js/runtime-main.3d4c5369.js",
+    "static/js/2.d5d12a7c.chunk.js",
+    "static/css/main.bc29291b.chunk.css",
+    "static/js/main.de307273.chunk.js"
   ]
 }
