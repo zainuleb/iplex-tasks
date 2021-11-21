@@ -1,0 +1,103 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .flex-container{
+              background-color: whitesmoke;
+              max-width: 50%;
+              margin-top: 5%;
+              margin-left: 25%;
+          }
+  
+  
+  header {
+    background-color:lightskyblue;
+    padding: 10px;
+    color: black;
+    border-radius:10px;
+    max-width:80%;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .flex-div{
+    display: flex;
+    flex-direction: column;
+}
+
+  
+  nav {
+    background-color:lightskyblue;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    border-radius: 10px;;
+    max-width:80%;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+  }
+    
+
+section{      
+    display: flex;
+    justify-content:space-around;
+    max-width:90%;
+
+    margin:auto;
+    }
+  
+  
+  
+  
+      .left-div{
+          background-color: lightskyblue;
+          padding: 10px;
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+    width: 40%;
+    margin: auto;
+    margin-top: 10px;
+      }
+
+      .section{
+        background-color: mediumaquamarine;
+        width: 70%;
+        border-radius: 10px;;
+    }
+      
+      .right-div{
+    background-color: lightskyblue;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    border-radius: 10px;;
+    width: 40%;
+    height: 130px;
+    margin: auto;
+    margin-top: 10px;
+  }
+  
+  footer{
+    background-color:lightskyblue;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    border-radius: 10px;;
+    max-width:80%;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+  }
+  
+
+  
+  .header-div{
+      display: flex;
+      flex-direction: column;
+  }
+  

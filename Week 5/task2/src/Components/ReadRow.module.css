@@ -1,0 +1,18 @@
+.btnBloc button {
+  width: 100%;
+  padding: 5px;
+  max-width: 130px;
+  margin: 20px auto;
+  border-radius: 5px;
+  border: none;
+  background: #1c87c9;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.btnBloc button:hover {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}

@@ -1,0 +1,26 @@
+.btnBloc button {
+  width: 100%;
+  padding: 5px;
+  max-width: 130px;
+  margin: 20px auto;
+  border-radius: 5px;
+  border: none;
+  background: #1c87c9;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.btnBloc button:hover {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.rowStyle input {
+  height: 26px;
+  padding-left: 2px;
+  border-radius: 0 5px 5px 0;
+  border: solid 1px #cbc9c9;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09);
+}

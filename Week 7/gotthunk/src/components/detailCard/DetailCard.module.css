@@ -1,0 +1,65 @@
+.details {
+  background-image: url('../../data/details.jpg');
+  background-size: 1485px 780px;
+  height: 100vh;
+  padding: 10px 0px;
+  background-repeat: no-repeat;
+}
+
+.cardWrap {
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  max-width: 800px;
+  margin: 150px auto;
+  padding: 20px 50px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.imageWrap img {
+  max-width: 300px;
+  border-radius: 110px;
+  opacity: 0.85;
+}
+
+.imageWrap img:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  opacity: 0.99;
+}
+
+.contentWrap {
+  max-width: 600px;
+}
+
+.contentWrap {
+  font-size: 22px;
+}
+
+.contentWrap p:last-child {
+  margin: 20px;
+  text-align: center;
+  font-size: 75px;
+  font-weight: 900;
+}
+
+.options {
+  padding: 10px 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.options li {
+  font-size: 20px;
+  margin: 10px 0px;
+  padding: 10px 15px;
+  background-color: aquamarine;
+  border-radius: 12px;
+  border: 2px solid black;
+}
+
+.options li:hover {
+  cursor: pointer;
+  background-color: transparent;
+}

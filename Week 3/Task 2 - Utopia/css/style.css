@@ -1,0 +1,603 @@
+/* --------- Fonts Imported --------- */
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope-ExtraBold.woff2') format('woff2'),
+    url('Manrope-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope-Medium.woff2') format('woff2'),
+    url('/fonts/Manrope-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope-SemiBold.woff2') format('woff2'),
+    url('/fonts/Manrope-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope-Light.woff2') format('woff2'),
+    url('/fonts/Manrope-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope-Regular.woff2') format('woff2'),
+    url('/fonts/Manrope-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope-ExtraLight.woff2') format('woff2'),
+    url('/fonts/Manrope-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope-Bold.woff2') format('woff2'),
+    url('/fonts/Manrope-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --------- Global Styles --------- */
+body {
+  font-family: 'Manrope';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1250px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+h4:hover {
+  color: #ed7a23;
+  cursor: pointer;
+}
+
+h5 {
+  color: #ed7a23;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+p {
+  font-size: 12px;
+  line-height: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+span {
+  font-size: 14px;
+}
+
+.prim-btn {
+  max-width: 166px;
+  color: #ed7a23;
+  padding: 7px 5px;
+  border: 1px solid #ed7a23;
+  font-weight: 700;
+  margin: auto;
+}
+
+.scnd-btn {
+  max-width: 156px;
+  color: #ffffff;
+  background-color: #ed7a23;
+  padding: 9px 8px;
+  border: 1px solid #ed7a23;
+  font-weight: 700;
+  margin: auto;
+}
+
+/* --------- Header Styles --------- */
+
+.logo {
+  margin: auto;
+}
+
+.logo img {
+  max-width: 120px;
+  max-height: 120px;
+}
+
+.socialmedia-header {
+  margin: 25px;
+}
+
+.fa-customize {
+  font-size: 30px;
+  color: black;
+  margin: 3px;
+}
+
+/* --------- Navbar Styles --------- */
+
+/* --------- Hero Styles --------- */
+
+.hero {
+  background-color: #231f20;
+}
+
+.hero-img {
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.hero-img img {
+  max-width: 1200px;
+}
+
+.hero-text {
+  color: white;
+  max-width: 1100px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.hero-text p {
+  color: #868689;
+}
+
+/* --------- Full Report Styles --------- */
+
+.full-report {
+  margin: 70px 10px;
+}
+
+/* Border Styles */
+
+.full-report .col-md-3:first-child {
+  border-right: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.full-report .col-md-3:last-child {
+  border-left: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Column Style */
+.colone-item {
+  max-width: 270px;
+  margin: 0px 10px 35px 10px;
+}
+
+.colone-item img {
+  max-width: 250px;
+  margin: 0px 0px 20px 0px;
+}
+
+.coltwo-wrap {
+  max-width: 550px;
+  margin: auto;
+}
+
+.coltwo-img {
+  margin: 0px auto 30px auto;
+}
+
+.coltwo-img img {
+  max-width: 550px;
+}
+
+.coltwo-text ul {
+  margin: 20px 0px 40px 0px;
+}
+
+.coltwo-text ul p {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.coltwo-text li {
+  position: relative;
+}
+
+.coltwo-text li h4::before {
+  content: '';
+  background: url('/images/para-before.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 3px;
+  left: -6px;
+  width: 7%;
+  height: 42%;
+}
+
+/* --------- Partner Styles --------- */
+
+.partners {
+  background-color: #ebebeb;
+  padding: 30px 0px 20px 0px;
+}
+
+.partners p {
+  font-size: 14px;
+  max-width: 160px;
+  margin: auto;
+}
+
+.partners .row {
+  margin: 35px 0px 30px 0px;
+}
+
+.partners img {
+  max-width: 150px;
+}
+
+/* --------- Research Styles --------- */
+
+.research-report {
+  margin: 40px 0px 40px 0px;
+}
+
+.research-report h5 {
+  margin: 0px 0px 10px 0px;
+}
+
+.research-report p {
+  font-size: 14px;
+}
+
+.research-img {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.research-img img {
+  max-width: 600px;
+  margin-bottom: 0;
+}
+
+.research-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0px 0px 0px;
+}
+
+.research-wrap img {
+  max-width: 150px;
+}
+
+.research-report .container > .row {
+  margin: 60px 0px 60px 0px;
+}
+
+.research-side h4 {
+  max-width: 300px;
+}
+
+.research-side {
+  margin: auto;
+}
+
+.research-report .prim-btn {
+  margin-right: 170px;
+}
+
+/* --------- Videos Styles --------- */
+
+.videos {
+  background-color: #231f20;
+  padding: 40px 0px 40px 0px;
+}
+
+.videos h4 {
+  color: white;
+  font-size: 16px;
+}
+
+.video-left {
+  max-width: 550px;
+  margin: auto;
+}
+
+.video-left img {
+  max-width: 500px;
+  margin: 0px 0px 30px 0px;
+}
+
+.video-left .prim-btn {
+  margin: 60px 0px 0px 0px;
+  padding: 7px 14px;
+}
+
+.video-item {
+  max-width: 220px;
+  margin: 0 auto 30px auto;
+}
+
+.video-item img {
+  max-width: 200px;
+  max-height: 117px;
+  width: 100%;
+  height: 100%;
+}
+
+.video-item h5 {
+  margin: 10px 0px;
+}
+
+/* --------- Content Styles --------- */
+
+.content {
+  margin: 30px 0px 30px 0px;
+}
+.content p {
+  font-style: italic;
+}
+
+.small-item {
+  max-width: 230px;
+  margin: auto;
+}
+
+.small-item img {
+  max-width: 230px;
+  margin: 0px 0px 10px 0px;
+}
+
+.large-item {
+  margin: 10px 0px 20px 0px;
+}
+
+.large-item img {
+  max-width: 775px;
+  margin: 20px 0px;
+}
+
+.photo-gallary {
+  margin: 20px 0px 20px 0px;
+}
+
+.photo-gallary img {
+  max-width: 775px;
+  margin: 20px 0px;
+}
+
+.news {
+  margin: 0px 0px 60px 0px;
+}
+
+.news h4 {
+  margin: 30px 0px 30px 0px;
+}
+
+.trending-img img {
+  max-width: 70px;
+}
+
+.right-content {
+  padding: 0px 50px 0px 50px;
+}
+
+.trending-head {
+  margin: auto;
+}
+
+.trending-head h3 {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.story-item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 0px 20px 0px;
+}
+
+.story-item img {
+  max-width: 70px;
+}
+
+.insta-row {
+  margin: 30px 0px;
+}
+
+.insta-row .col-md-9 {
+  display: flex;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+.insta-row .insta-logo {
+  display: flex;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+.insta-logo img {
+  max-width: 70px;
+}
+
+.insta-link h3 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.insta-link a {
+  color: #ed7a23;
+}
+
+.insta-item,
+.insta-item img {
+  max-width: 98px;
+}
+
+.insta-row .col-md-4 {
+  padding: 0.5px;
+  max-width: 122px;
+}
+
+.poll {
+  margin: 30px 0px;
+}
+
+.poll h5,
+h4 {
+  margin: 15px 0px;
+}
+
+.poll-block {
+  margin: 30px 10px;
+}
+
+.poll-item {
+  padding: 20px;
+  margin: 12px 0px;
+  text-align: center;
+  border: 1px solid #746e6a;
+}
+
+.poll-item:hover {
+  border: 1px solid #ed7a23;
+}
+
+.poll-item p {
+  margin-bottom: 0;
+}
+
+/* --------- Topic Styles --------- */
+
+.topics {
+  background-color: #231f20;
+  padding: 50px 0px;
+}
+
+.topics .container {
+  border-bottom: 3px solid rgba(218, 160, 160, 0.2);
+}
+
+.topic-text {
+  margin: 0px 0px 30px 0px;
+}
+
+.topic-text h4 {
+  color: white;
+}
+
+.topic-text ul {
+  padding-left: 0rem;
+}
+
+.topic-text a {
+  color: #666666;
+  font-size: 12px;
+}
+
+/* --------- More Options Styles --------- */
+.more-options {
+  background-color: #231f20;
+}
+
+.more-text h4 {
+  color: white;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.more-left .row {
+  border-right: 3px solid rgba(218, 160, 160, 0.2);
+}
+
+.more-right {
+  padding: 20px 30px 20px 30px;
+}
+
+.subscribe-area {
+  margin: 30px 0px 0px 0px;
+}
+
+.subscribe-area h4 {
+  color: orange;
+  font-size: 18px;
+}
+
+.follow-area {
+  display: flex;
+  justify-content: end;
+  margin: 20px 0px 20px 0px;
+}
+
+.follow-area span {
+  color: #999797;
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: auto 0px;
+}
+
+.white-icons {
+  margin: 0px 45px;
+}
+
+.white-icons .fa-customize {
+  color: white;
+}
+
+/* --------- Footer Styles --------- */
+
+footer {
+  background-color: #231f20;
+  color: #868689;
+  padding: 30px 0px 20px 0px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-list a {
+  font-size: 12px;
+}

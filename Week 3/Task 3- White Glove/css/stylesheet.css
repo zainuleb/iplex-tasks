@@ -1,0 +1,677 @@
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Alt Lt';
+  src: url('../fonts/ProximaNovaA-Light.woff2') format('woff2'),
+    url('../fonts/ProximaNovaA-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Th';
+  src: url('../fonts/ProximaNova-Extrabld.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Extrabld.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --------- Global Styles --------- */
+
+body {
+  font-family: 'Proxima Nova Rg';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1240px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #033b2f;
+  padding: 5px 0px;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 60px;
+  font-family: 'Proxima Nova Th';
+  line-height: 60px;
+  color: #033b2f;
+}
+
+h2 {
+  color: #bbd86e;
+  font-size: 60px;
+  font-weight: 900;
+  font-size: 60px;
+  font-family: 'Proxima Nova Th';
+}
+
+h5 {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  color: #b5d659;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 900;
+  color: #033b2f;
+}
+
+/* --------- Header Styles --------- */
+
+header {
+  padding: 7px 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-area {
+  padding: 5px 15px;
+}
+
+.logo-area img {
+  max-width: 206px;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar-list li a {
+  max-width: 200px;
+  padding: 15px 10px;
+  margin: 0px 4px;
+  font-size: 18px;
+}
+
+.navbar-list li a:hover {
+  border-bottom: 2.5px solid #99cc0c;
+  border-top: 2.5px solid #99cc0c;
+  padding: 8px 10px;
+  transition: ease-in 0.4s;
+
+  color: #033b2f;
+}
+
+.navbar-list li:last-child a {
+  font-weight: 700;
+}
+
+/* --------- Hero Styles --------- */
+
+.hero {
+  margin: 40px 0px;
+}
+
+.hero-text {
+  margin: 50px 20px 50px 20px;
+  max-width: 460px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #033b2f;
+  opacity: 0.8;
+  margin: 5px 0px;
+  padding: 5px 0px;
+}
+
+.hero-text h5 {
+  padding: 5px 0px;
+  margin: 0;
+}
+
+.hero-text img {
+  max-width: 250px;
+}
+
+.hero-img {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.hero-img img {
+  max-width: 650px;
+}
+
+.border-btn {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  border: 3px solid #bbd86e;
+}
+
+.border-btn::after,
+.border-btn:hover {
+  width: 100%;
+  will-change: auto;
+  transition: 4s ease-out;
+}
+
+.booking-btn {
+  position: relative;
+  width: 100%;
+  max-width: 405px;
+  margin: 30px 0px;
+}
+
+.link-4.white-bg {
+  background-color: #fff;
+  color: #033b2f;
+}
+
+.link-4 {
+  display: inline-block;
+  max-width: 400px;
+  margin-top: 15px;
+  margin-left: 20px;
+  padding: 1px 6px;
+  background-color: #158327;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.4em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* 
+.booking-btn a {
+  position: absolute;
+  z-index: 999;
+  top: 18px;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 10px 20px;
+  max-width: 300px;
+  margin: 0 auto;
+} */
+
+/* --------- Consult Items Styles --------- */
+
+.consult-items {
+  z-index: -1;
+  background-image: url('../images/backgroundimg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 150px 0px 0px 0px;
+  padding: 0px 0px 50px 0px;
+}
+
+.card-wrap {
+  background-color: #f3f5ee;
+  padding: 40px 55px 72px 55px;
+  border-radius: 10px;
+  max-width: 360px;
+  margin: auto;
+  max-height: 500px;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.icon-wrap {
+  border-radius: 50%;
+  background-color: #b5d659;
+  max-width: 105px;
+  padding: 14%;
+  margin: 20px auto;
+}
+
+.icon-wrap img {
+  max-width: 33px;
+  margin: 0 auto;
+}
+
+.card-text {
+  max-width: 240px;
+  margin: 0 auto;
+  text-align: center;
+  color: #033b2f;
+}
+
+.card-text h5 {
+  font-size: 28px;
+  color: #033b2f;
+}
+
+.card-text p {
+  font-size: 18px;
+  max-width: 400px;
+}
+
+/* --------- Healthcare Styles --------- */
+
+.healthcare {
+  margin: 100px 0px;
+}
+
+.image-style {
+  max-width: 180px;
+  margin: auto;
+}
+
+.image-style img {
+  max-width: 180px;
+}
+
+.healthcare-text {
+  max-width: 900px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.healthcare-text h3 {
+  color: white;
+  margin: 20px 0px;
+}
+
+/* --------- Faqs Styles --------- */
+.faqs {
+  z-index: -1;
+  background-color: #f3f5ee;
+  border-bottom-left-radius: 50% 8%;
+  border-bottom-right-radius: 50% 8%;
+}
+
+.video-frame {
+  position: relative;
+  max-width: 1100px;
+  top: -70px;
+  margin: 0px auto;
+}
+
+.faqs .healthcare {
+  margin: 10px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
+}
+
+.faqs-headings {
+  max-width: 800px;
+  margin: 40px auto 0px auto;
+  text-align: center;
+}
+
+.faqs-headings h3 {
+  color: black;
+  margin: 10px 0px;
+}
+
+.faqs-headings p {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.faqs .row {
+  margin: 20px 0px 0px 0px;
+}
+
+.faq-card {
+  background-color: white;
+  padding: 50px 30px;
+  border-radius: 10px;
+  max-width: 360px;
+  margin: 10px auto 20px auto;
+  max-height: 500px;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.faq-card:hover {
+  transform: rotateY(180deg);
+  transition: 0.5s ease-in-out;
+}
+
+.faq-img {
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.faq-img img {
+  max-width: 220px;
+}
+
+.faqcard-text {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.faqcard-text h6 {
+  font-size: 24px;
+  margin: 15px 0px;
+}
+
+.faqcard-text p {
+  font-size: 18px;
+}
+
+/* --------- Testimonial Styles --------- */
+
+.testimonial-headings {
+  max-width: 700px;
+  margin: 10px auto;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.testimonial-headings h6 {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.test-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+}
+
+.test-wrapper .test-card:nth-child(2) {
+  margin-top: -100px; /* 
+  padding: 0px 0px 50px 0px; */
+  max-height: 440px;
+}
+
+.test-card {
+  max-width: 360px;
+  width: 100%;
+  margin: 0px 20px;
+  text-align: center;
+  background-color: #f3f5ee;
+  padding: 10px 10px 100px 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.test-frame {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.test-frame iframe {
+  max-width: 350px;
+}
+
+.test-text {
+  max-width: 250px;
+  margin: 20px auto;
+  color: #033b2f;
+}
+
+.test-text h6 {
+  font-size: 18px;
+}
+
+/* --------- Slider Styles --------- */
+
+.slider-item {
+  max-width: 990px;
+  margin: 100px auto;
+  padding: 85px 55px;
+  background-color: #f3f5ee;
+  color: #033b2f;
+}
+
+.slider-item h4 {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 700;
+  text-align: left;
+  max-width: 950px;
+  margin: auto;
+}
+
+.slider-item h3 {
+  font-family: 'Proxima Nova Th';
+  font-weight: 900;
+  font-size: 32px;
+  margin: 40px 0px 0px 0px;
+}
+
+.slider-item span {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  padding: 10px;
+  background-color: #f3f5ee;
+  color: #033b2f;
+  border-radius: 50%;
+}
+
+/* --------- Booking Styles --------- */
+
+.booking {
+  background-image: url('/images/booking-img.png');
+  background-repeat: no-repeat;
+  background-size: auto 500px;
+}
+
+.booking-img img {
+  max-width: 510px;
+  max-height: 500px;
+  margin: -60px auto;
+}
+
+.booking-text {
+  max-width: 500px;
+  margin: 100px auto;
+}
+
+.booking-text h2 {
+  color: white;
+  font-size: 35px;
+}
+
+.booking-text span {
+  color: white;
+  font-weight: 700;
+}
+
+.booking-text .action-button-bg.type-2 {
+  z-index: 0;
+}
+
+.booking-text .action-button-bg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 15%;
+  height: 60px;
+  border: 3px solid #bbd86e;
+}
+
+.booking-text .link-4.type-2 {
+  position: relative;
+  z-index: 1;
+}
+
+.booking-text .link-4 {
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 20px;
+  padding: 1px 6px;
+  background-color: #0c701d;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.4em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* --------- Contact Styles --------- */
+
+.contact {
+  margin: 150px 0px;
+}
+
+.contact .logo img {
+  max-width: 250px;
+  margin: 0;
+}
+
+.about-text {
+  max-width: 430px;
+  margin: 0px 16px;
+}
+
+.about-text p {
+  color: #033b2f;
+  font-size: 13px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: start;
+  margin: 20px auto;
+}
+
+.contact-item img {
+  max-width: 30px;
+  max-height: 30px;
+  margin: 0px 10px 0px 10px;
+}
+
+.contact-item a,
+p {
+  font-size: 13px;
+  margin: 0px 5px;
+}
+
+.contact .col-md-3,
+.col-md-4 {
+  margin-top: 45px;
+}
+.social-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-item img {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.social-item a:hover {
+  border: unset;
+}
+
+/* --------- Footer Styles --------- */
+
+footer .container {
+  border-top: 1px solid #033b2f;
+}
+
+.copyrights {
+  padding: 20px 0px;
+}
+
+.copyrights span {
+  font-size: 14px;
+  color: #033b2f;
+}
+
+/* --------------- Services Stylesheet --------------- */
+
+.service-hero {
+  background-image: url('../images/services/hero-img.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 1500px 500px;
+  padding: 20px 0px 200px 0px;
+}
+
+.service-hero h1 {
+  color: #bbd86e;
+  padding: 30px 0px 20px 0px;
+}
+
+.service-hero h5 {
+  color: white;
+  max-width: 460px;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0px auto;
+  padding: 90px 0px;
+  text-align: center;
+}
+
+/* --------- Medicad Styles --------- */
+
+.list-item {
+  padding: 10px 50px;
+  max-width: 401px;
+  margin: 10px auto;
+  background-color: #f3f5ee;
+  border-radius: 10px;
+}
+
+.list-item:hover {
+  background: #033b2f;
+  color: #f3f5ee;
+}
+
+.list-item h5 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #033b2f;
+  opacity: 0.6;
+}

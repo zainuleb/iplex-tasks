@@ -1,0 +1,16 @@
+/* .inputStyles {
+  border: 2px solid black;
+  margin: 50px 10px;
+  padding: 50px 50px;
+} */
+
+.formControl {
+  margin: 20px 100px;
+  padding: 20px 20px;
+  text-align: left;
+}
+
+.formControl label {
+  font-size: 16px;
+  font-weight: 600;
+}

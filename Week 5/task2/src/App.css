@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-color: #282c34;
+  color: white;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.record {
+  max-width: 340px;
+  max-height: 370px;
+  padding: 10px 0;
+  border-radius: 5px;
+  margin: 30px;
+  border: solid 1px rgba(216, 208, 208, 0.31);
+  box-shadow: 3px 5px 15px rgba(216, 208, 208, 0.31);
+  background: transparent;
+}
+
+.record input:focus,
+.record input:active {
+  color: #053c5f;
+  font-size: 18px;
+}
+
+.record input {
+  width: calc(100% - 57px);
+  height: 36px;
+  margin: 13px 0 0 -5px;
+  padding-left: 10px;
+  border-radius: 0 5px 5px 0;
+  border: solid 1px #cbc9c9;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09);
+  background: #fff;
+}
+
+.btn-block {
+  text-align: center;
+}
+
+.btn-block button {
+  width: 100%;
+  padding: 10px 10px;
+  max-width: 130px;
+  margin: 30px auto;
+  border-radius: 5px;
+  border: none;
+  background: #1c87c9;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.btn-block button:hover {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 15px;
+  border: 1px solid yellow;
+}
+
+.table {
+  max-width: 1000px;
+  min-height: 300px;
+  padding: 20px 40px;
+  border-radius: 5px;
+  margin: 30px;
+  border: solid 1px rgba(216, 208, 208, 0.31);
+  box-shadow: 3px 5px 15px rgba(216, 208, 208, 0.31);
+  background: transparent;
+}
+
+.table thead {
+  padding: 20px 10px;
+}
+
+.table thead th,
+.table tbody td {
+  padding: 5px 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
